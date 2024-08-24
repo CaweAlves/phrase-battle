@@ -5,7 +5,7 @@ namespace App;
 enum FriendshipStatus: string
 {
     case Pending = 'pending';
-    case Accept  = 'accept';
+    case Accept  = 'accepted';
 
     public function getMessage(): string
     {
