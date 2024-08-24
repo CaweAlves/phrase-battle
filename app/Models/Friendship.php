@@ -23,4 +23,14 @@ class Friendship extends Model
         ];
     }
 
+    public function requester()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function recipient()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }
