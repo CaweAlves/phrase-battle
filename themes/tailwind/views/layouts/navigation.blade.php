@@ -1,6 +1,6 @@
 <nav class="bg-[#2563Eb] border-b border-blue-600">
     <!-- Primary Navigation Menu -->
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="mx-auto px-10">
         <div class="flex justify-between h-16 text-white text-sm font-medium leading-5">
             <div class="flex">
                 <!-- Logo -->
