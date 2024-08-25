@@ -15,6 +15,8 @@ class UserController extends Controller
     {
         $username = $request->input('username');
 
-        return $this->userRepository->findByUsername($username);
+        return $this->userRepository->findByUsername($username)->isNotEmpty()
+            ? $this->userRepository->findByUsername($username)
+            : response(status: 404);
     }
 }
