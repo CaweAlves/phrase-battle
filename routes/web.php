@@ -11,7 +11,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::group(['prefix' => 'users'], function () {
+Route::group(['prefix' => 'users', 'middleware' => 'auth'], function () {
     Route::get('/search', [UserController::class, 'search']);
     Route::post('/{userId}/friend-requests/{friendId}', [FriendshipController::class, 'send'])->name('send-friend-request');
 });
